@@ -1,0 +1,106 @@
+/* Zona noticias */
+@import 'mixins';
+@import 'colors';
+
+.navbar-container {
+    color: nth($colors , 3);
+    @include positions(relative);
+    top: 0;
+    @include parametros(flex,center);
+    flex-direction: column;
+    font-size: 30px; 
+    nav {
+        font-size: 40px;
+        background-color: nth($colors , 1);
+        @include parametros(flex, center);
+        left: 0;
+        flex-direction: column;
+        @media screen and (max-width: 960px){
+            left: 0;
+        }
+        .navbar-brand {
+            font-family: 'Amatic SC', cursive;
+            color: nth($colors , 3);
+            font-size: 90px;
+            text-decoration: underline;
+            @media screen and (max-width:380px) {
+                font-size: 25px;
+            }
+            @media screen and (min-width:381px) and (max-width: 480px) {
+                font-size: 40px;
+            }
+            @media screen and (min-width: 481px) and (max-width: 960px) {
+                font-size: 60px;
+            }
+            @media screen and (min-width: 961px) and (max-width:1345px) {
+                font-size: 60px;
+            }
+        }
+        ul {
+            .dropdown {
+                .dropdown-menu {
+                    li {
+                        display: list-item;
+                    }
+                }
+            }
+            li {
+                a {
+                    color: nth($colors , 3);
+                    @media screen and (max-width:330px) {
+                        font-size: 20px;
+                    }
+                }
+                .dropdown-item {
+                    color: nth($colors , 1);
+                }
+            }
+        }
+    }
+    .texto-flex{
+        width: 70%;
+        left: 15%;
+        @include parametros(flex , center);
+        @include positions(relative);
+        div {
+            font-family: 'Amatic SC', cursive;
+            color: nth($colors , 3);
+            flex-direction: column;
+            #scrollspyHeading1 , #scrollspyHeading2 , #scrollspyHeading3 , #scrollspyHeading4 ,
+            #scrollspyHeading5 {
+                font-size: 90px;
+                text-decoration: underline;
+                text-align: center;
+                @media screen and (min-width:241px) and (max-width:430px) {
+                    font-size: 50px;
+                }
+                @media screen and (max-width:240px) {
+                    font-size: 30px;
+                }
+            }
+            h4 {
+                text-align: center;
+            }
+            p {
+                text-align: center;
+                @media screen and (max-width:240px) {
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+}
+
+.lollapalooza-gif-container {
+    width: 100%;
+    @include positions(absolute);
+    top: 850px;
+    @include parametros(flex, center);
+    .lollapalooza-gif {
+        width: 100%;
+        @include parametros(flex, right);
+    }
+    @media screen and (max-width: 1280px) {
+        display: none;
+    }
+}
