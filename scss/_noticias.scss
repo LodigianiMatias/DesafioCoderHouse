@@ -62,6 +62,7 @@
         left: 15%;
         @include parametros(flex , center);
         @include positions(relative);
+        padding-bottom: 50px;
         div {
             font-family: 'Amatic SC', cursive;
             color: nth($colors , 3);
