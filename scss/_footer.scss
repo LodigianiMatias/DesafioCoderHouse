@@ -7,9 +7,9 @@
         @include positions(fixed);
         @include parametros(flex, space-between);
         bottom: 0px;
-        @media screen and (max-width: 480px) {
+        @media screen and (max-width: 1640px) {
             @include positions(fixed);
-            width: 480px;
+            width: 100%;
             @include parametros(flex, space-around);
             bottom: 5px;
         }
