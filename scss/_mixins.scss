@@ -1,0 +1,9 @@
+/* Mixins */
+@mixin parametros($display , $justify) {
+    display: $display;
+    justify-content: $justify;
+}
+
+@mixin positions($position) {
+    position: $position;
+}

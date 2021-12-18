@@ -1,0 +1,284 @@
+// Body
+@import 'mixins';
+@import 'colors';
+
+body {
+    background-color: black;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+.header-container {
+    font-family: 'Amatic SC', cursive;
+    font-size: 50px;
+    height: 120px;
+    @include parametros(flex, center);
+    @media screen and (min-width:992px) and (max-width:1199px) {
+        font-size: 30px;
+    }
+    @media screen and (max-width:991px) {
+        height: auto;
+    }
+    @media screen and (min-width) {
+        
+    }
+    .navbar-brand {
+        font-family: 'Amatic SC', cursive;
+        img {
+            width: 350px;
+            @media screen and (min-width:330px) and (max-width:490px) {
+                width: 200px;
+            }
+            @media screen and (min-width:230px) and (max-width:329px) {
+                width: 150px;
+            }
+            @media screen and (max-width:229px) {
+                width: 100px;
+            }
+        }
+        @media screen and (min-width:992px) and (max-width:1199px) {
+            font-size: 40px;
+        }
+        @media screen and (min-width:300px) and (max-width:491px) {
+            font-size: 30px;
+        }
+        @media screen and (min-width:228px) and (max-width:391px) {
+            font-size: 25px;
+        }
+        @media screen and (min-width:175px) and (max-width:227px) {
+            font-size: 15px;
+        }
+        @media screen and (max-width:174px){
+            font-size: 10px;
+        }
+    }
+    a {
+        margin: 50px;
+        @media screen and (min-width:300px) and (max-width:530px) {
+            margin: 30px;
+        }
+        @media screen and (min-width:281px) and (max-width:391px) {
+            margin: 25px;
+        }
+        @media screen and (max-width:250px) {
+            margin: 0;
+        }
+
+    }
+    nav {
+        background-color: black;
+    }
+    .navbar-collapse {
+        ul {
+            li {
+                @media screen and (max-width:992px) {
+                    @include parametros(flex, center);
+                } 
+            }
+        }
+    }
+}
+
+.logo-background {
+    @include parametros(flex, center);
+    @include positions(relative);
+    top: 100px;
+    @media screen and (max-width:991px) {
+        top: 0;
+    }
+    img {
+        width: 550px;
+        @media screen and (min-width:400px) and (max-width:600px) {
+            width: 400px;
+        }
+        @media screen and (min-width:300px) and (max-width:399px) {
+            width: 300px;
+        }
+        @media screen and (min-width:200px) and (max-width:299px) {
+            width: 200px;
+        }
+        @media screen and (min-width:100px) and (max-width:199px) {
+            width: 100px;
+        }
+    }
+}
+
+.redes-container {
+    @include positions(relative);
+    @include parametros(flex, center);
+    top: 100px;
+    @media screen and (max-width: 480px) {
+        top: 20px;
+    }
+    @media screen and (min-width: 481px) and (max-width: 529px) {
+        top: 200px;
+    }
+    @media screen and (min-width: 686px) and (max-width: 816px) {
+        top: 150px;  
+    }
+    @media screen and (min-width: 817px) and (max-width: 854px) {
+        top: 200px;             
+    }
+    @media screen and (min-width: 855px) and (max-width: 991px) {
+        top: 50px;
+    }
+    @media screen and (min-width: 992px) and (max-width: 1280px) {
+        top: 150px;
+    }
+    @media screen and (min-width: 1281px) and (max-width: 1640px) {
+        top: 200px;
+    }
+    .redes {
+        width: 900px;
+        @include parametros(flex, center);
+        flex-wrap: wrap;
+        a {
+            margin-left: 10px;
+            img {
+                width: 100px;
+                height: 100px;
+                @media screen and (max-width: 480px) {
+                    width: 75px;
+                    height: 75px;
+                }
+            }
+            &:hover {
+                transform: translate(0 , -20px);
+                transition: all 1s;
+                padding: 0 10px 0 10px;
+            }
+        }
+    }
+}
+
+.videos-container {
+    @include positions(absolute);
+    @include parametros(flex , left);
+    left: 1%;
+    bottom: 250px;
+    @media screen and (max-width:1640px) {
+        @include positions(relative);
+        @include parametros(flex , center);
+        bottom: 0;
+        top: 750px;
+    }
+    @media screen and (min-width:530px) and (max-width:854px) {
+        bottom: 0;
+        top: 600px;
+    }
+    @media screen and (min-width:855px) and (max-width:991px) {
+        @include positions(relative);
+        @include parametros(flex , center);
+        bottom: 0;
+        top: 400px;
+    }
+    @media screen and (min-width:992px) and (max-width:1640px) {
+        @include positions(relative);
+        @include parametros(flex , center);
+        bottom: 0;
+        top: 480px;
+    }
+    iframe {
+        width: 640px;
+        height: 360px;
+        @media screen and (min-width:1641px) and (max-width:1870px) {
+            width: 530px;
+            height: 300px; 
+        }
+        @media screen and (min-width:855px) and (max-width:1640px) {
+            width: 854px;
+            height: 480px;
+        }
+        @media screen and (min-width:530px) and (max-width:854px) {
+            width: 530px;
+            height: 300px;
+        }
+        @media screen and (min-width:426px) and (max-width:529px) {
+            width: 426px;
+            height: 240px;
+        }
+        @media screen and (max-width:425px) {
+            display: none;
+        }
+    }
+}
+
+.parrafo-menu{
+    font-family: 'Amatic SC', cursive;
+    font-size: 45px;
+    color: nth($colors , 3);
+    flex-wrap: wrap;
+    @include positions(relative);
+    bottom: 500px;
+    @include parametros(flex, right);
+    right: 10%;
+    @media screen and (max-width: 1870px) {
+        font-size: 40px;
+    }
+    @media screen and (min-width:992px) and (max-width: 1640px) {
+        @include parametros(flex, center);
+        right: 0;
+        bottom: 400px;
+    }
+    @media screen and (min-width:855px) and (max-width: 991px) {
+        @include parametros(flex, center);
+        right: 0;
+        bottom: 500px;
+    }
+    @media screen and (min-width:530px) and (max-width:854px) {
+        @include parametros(flex, center);
+        bottom: 300px;
+        right: 0;
+    }
+    @media screen and (min-width:426px) and (max-width:529px) {
+        @include parametros(flex, center);
+        bottom: 250px;
+        right: 0;
+    }
+    @media screen and (max-width:425px) {
+        @include parametros(flex, center);
+        bottom: 0;
+        right: 0;
+    }
+}
+.parrafo-titulo {
+    @include parametros(flex, center);
+    width: 400px;
+    @media screen and (min-width: 1865px) {
+        @include positions(relative);
+        left: -50px;
+    }
+    @media screen and (min-width: 1640px) and (max-width:1864px) {
+        left: -20px;
+    }
+    h2 {
+        text-align: center;
+        text-decoration: underline;
+        font-size: 70px;
+    }
+
+
+}
+.parrafo {
+    width: 650px;
+    @include positions(absolute);
+    top: 110px;
+    left: 75%;
+    display: flex;
+    @media screen and (min-width:1641px) and (max-width: 1870px) {
+        width: 500px;
+        left: 78%;
+    }
+    @media screen and (max-width: 1640px) {
+        width: auto;
+        @include positions(relative);
+        @include parametros(flex, center);
+        left: 2%;
+        top: 0;
+    }
+    p {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
