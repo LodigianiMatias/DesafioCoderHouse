@@ -636,6 +636,7 @@ body {
   flex-wrap: wrap;
   left: 15%;
   top: -500px;
+  padding-bottom: 50px;
 }
 @media screen and (max-width: 200px) {
   #equipo-diseño #equipo-derecha {
