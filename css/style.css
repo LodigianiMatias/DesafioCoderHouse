@@ -428,4 +428,83 @@ body {
   }
 }
 
+/* Seccion Tienda */
+/* FlexBox Tienda */
+/* Mixins */
+.container {
+  width: 100%;
+  font-family: "Amatic SC", cursive;
+}
+@media screen and (max-width: 766px) {
+  .container {
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+.container .row {
+  margin-bottom: 30px;
+}
+.container .row .col {
+  margin-bottom: 30px;
+}
+.container .row .col .card img {
+  height: 350px;
+}
+.container .row .col .card .card-body {
+  background-color: gray;
+}
+.container .row .col .card .card-body h5 {
+  font-size: 50px;
+  text-decoration: underline;
+  text-align: center;
+}
+.container .row .col .card .card-body p {
+  font-size: 30px;
+}
+.container .row .col .card .card-body a {
+  display: flex;
+  justify-content: center;
+}
+.container .row .col .card .card-body a:hover {
+  background-color: gray;
+  color: black;
+  transform: scale(1.1);
+  transition: all 0.5s;
+  font-size: 30px;
+  bottom: 10px;
+}
+
+/* Boton para volver al menu principal */
+/* Mixins */
+.menu-principal {
+  display: flex;
+  justify-content: center;
+}
+.menu-principal a {
+  width: 300px;
+  font-size: 20px;
+  color: white;
+  font-family: "Amatic SC", cursive;
+  text-decoration: underline;
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+}
+@media screen and (max-width: 480px) {
+  .menu-principal a {
+    bottom: 30px;
+  }
+}
+.menu-principal a:hover {
+  border-radius: 5px;
+  background-color: gray;
+  color: black;
+  transform: scale(2);
+  transition: all 0.5s;
+  bottom: 10px;
+}
+
 /*# sourceMappingURL=style.css.map */

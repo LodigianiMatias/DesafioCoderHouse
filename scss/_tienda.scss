@@ -1,0 +1,47 @@
+/* Seccion Tienda */
+/* FlexBox Tienda */
+@import 'colors';
+@import 'mixins';
+
+.container {
+    width: 100%;
+    font-family: 'Amatic SC', cursive;
+    @media screen and (max-width: 766px) {
+        width: 300px;
+        @include parametros(flex, center);
+        flex-wrap: wrap;
+    }
+    .row {
+        margin-bottom: 30px;
+        .col {
+            margin-bottom: 30px;
+            .card {
+                img {
+                    height: 350px;
+                }
+                .card-body {
+                    background-color: nth($colors , 2);
+                    h5 {
+                        font-size: 50px;
+                        text-decoration: underline;
+                        text-align: center;
+                    }
+                    p {
+                        font-size: 30px;
+                    }
+                    a {
+                        @include parametros(flex, center);
+                        &:hover {
+                            background-color: nth($colors , 2);
+                            color: nth($colors , 1);
+                            transform: scale(1.1);
+                            transition: all 0.5s;
+                            font-size: 30px;
+                            bottom: 10px;
+                        }
+                    }    
+                }    
+            }
+        }
+    }
+}

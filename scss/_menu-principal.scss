@@ -1,0 +1,28 @@
+/* Boton para volver al menu principal */
+@import 'mixins';
+@import 'colors'; 
+
+.menu-principal {
+    @include parametros(flex, center);
+    a {
+        width: 300px;
+        font-size: 20px;
+        color: nth($colors , 3);
+        font-family: 'Amatic SC', cursive;
+        text-decoration: underline;
+        @include positions(fixed);
+        bottom: 0;
+        @include parametros(flex, center);
+        @media screen and (max-width: 480px) {
+            bottom: 30px;
+        }
+        &:hover {
+            border-radius: 5px;
+            background-color: nth($colors , 2);
+            color: nth($colors , 1);
+            transform: scale(2);
+            transition: all 0.5s;
+            bottom: 10px;
+        }
+    }
+}
