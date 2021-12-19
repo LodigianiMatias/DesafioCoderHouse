@@ -1,1 +1,1 @@
-# Repositorio-de-prueba Bienvenido a la pagina web de iConnicz Gaming, en este proyecto encontrarás un codigo bien ordenado y comentado seccion por seccion. Se han utilizado elementos de AOS y de Bootstrap para una mejor fluidez y dinamismo de la pagina.
+Bienvenido a la pagina web de iConnicz Gaming, en este proyecto encontrarás un codigo bien ordenado y comentado seccion por seccion. Se han utilizado elementos de AOS y de Bootstrap para una mejor fluidez y dinamismo de la pagina.
