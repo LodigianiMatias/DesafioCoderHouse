@@ -105,11 +105,57 @@
 .lollapalooza-gif-container {
     width: 100%;
     @include positions(absolute);
-    top: 850px;
+    top: 780px;
     @include parametros(flex, center);
-    .lollapalooza-gif {
-        width: 100%;
-        @include parametros(flex, right);
+    @media screen and (max-width: 1280px) {
+        display: none;
+    }
+}
+
+.lollapalooza-gif {
+    width: 100%;
+    @include parametros(flex, right);
+}
+
+.ags-gif-container {
+    width: 100%;
+    @include positions(absolute);
+    top: 1000px;
+    @media screen and (min-width:1480px) and (max-width: 1502px) {
+        top: 1050px;
+    }
+    @media screen and (min-width:1281px) and (max-width: 1479px) {
+        top: 1100px;
+    }
+    @media screen and (max-width: 1280px) {
+        display: none;
+    }
+}
+
+.lol-gif-container {
+    width: 100%;
+    @include positions(absolute);
+    top: 1300px;
+    @media screen and (min-width:1480px) and (max-width: 1502px) {
+        top: 1420px;
+    }
+    @media screen and (min-width:1281px) and(max-width: 1479px) {
+        top: 1450px;
+    }
+    @media screen and (max-width: 1280px) {
+        display: none;
+    }
+}
+
+.cs-gif-container {
+    width: 100%;
+    @include positions(absolute);
+    top: 1650px;
+    @media screen and (min-width:1480px) and (max-width: 1502px) {
+        top: 1740px;
+    }
+    @media screen and (min-width:1281px) and(max-width: 1479px) {
+        top: 1780px;
     }
     @media screen and (max-width: 1280px) {
         display: none;

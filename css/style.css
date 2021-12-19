@@ -162,6 +162,11 @@ body {
     font-size: 50px;
   }
 }
+@media screen and (min-width: 316px) and (max-width: 450px) {
+  .logo-container {
+    font-size: 60px;
+  }
+}
 .logo-container .logo {
   width: 900px;
   display: flex;
@@ -230,6 +235,7 @@ body {
 @media screen and (max-width: 910px) {
   .redes-container .redes {
     width: 90%;
+    left: 5%;
   }
 }
 .redes-container .redes a {
@@ -863,14 +869,9 @@ body {
 .lollapalooza-gif-container {
   width: 100%;
   position: absolute;
-  top: 850px;
+  top: 780px;
   display: flex;
   justify-content: center;
-}
-.lollapalooza-gif-container .lollapalooza-gif {
-  width: 100%;
-  display: flex;
-  justify-content: right;
 }
 @media screen and (max-width: 1280px) {
   .lollapalooza-gif-container {
@@ -878,11 +879,78 @@ body {
   }
 }
 
+.lollapalooza-gif {
+  width: 100%;
+  display: flex;
+  justify-content: right;
+}
+
+.ags-gif-container {
+  width: 100%;
+  position: absolute;
+  top: 1000px;
+}
+@media screen and (min-width: 1480px) and (max-width: 1502px) {
+  .ags-gif-container {
+    top: 1050px;
+  }
+}
+@media screen and (min-width: 1281px) and (max-width: 1479px) {
+  .ags-gif-container {
+    top: 1100px;
+  }
+}
+@media screen and (max-width: 1280px) {
+  .ags-gif-container {
+    display: none;
+  }
+}
+
+.lol-gif-container {
+  width: 100%;
+  position: absolute;
+  top: 1300px;
+}
+@media screen and (min-width: 1480px) and (max-width: 1502px) {
+  .lol-gif-container {
+    top: 1420px;
+  }
+}
+@media screen and (min-width: 1281px) and (max-width: 1479px) {
+  .lol-gif-container {
+    top: 1450px;
+  }
+}
+@media screen and (max-width: 1280px) {
+  .lol-gif-container {
+    display: none;
+  }
+}
+
+.cs-gif-container {
+  width: 100%;
+  position: absolute;
+  top: 1650px;
+}
+@media screen and (min-width: 1480px) and (max-width: 1502px) {
+  .cs-gif-container {
+    top: 1740px;
+  }
+}
+@media screen and (min-width: 1281px) and (max-width: 1479px) {
+  .cs-gif-container {
+    top: 1780px;
+  }
+}
+@media screen and (max-width: 1280px) {
+  .cs-gif-container {
+    display: none;
+  }
+}
+
 /* Mixins */
 .foto-integrante-container {
   width: 50%;
-  display: flex;
-  justify-content: center;
 }
 @media screen and (max-width: 1640px) {
   .foto-integrante-container {
@@ -932,6 +1000,13 @@ body {
   left: 60%;
   top: 280px;
 }
+@media screen and (max-width: 1640px) {
+  .informacion-container {
+    position: relative;
+    left: 0;
+    top: 50px;
+  }
+}
 @media screen and (min-width: 326px) and (max-width: 614px) {
   .informacion-container {
     font-size: 35px;
@@ -940,13 +1015,6 @@ body {
 @media screen and (min-width: 615px) and (max-width: 800px) {
   .informacion-container {
     font-size: 50px;
-  }
-}
-@media screen and (max-width: 1640px) {
-  .informacion-container {
-    position: relative;
-    left: 0;
-    top: 50px;
   }
 }
 @media screen and (max-width: 325px) {
@@ -960,9 +1028,11 @@ body {
 }
 @media screen and (min-width: 801px) and (max-width: 1640px) {
   .informacion-container .informacion-integrante {
-    width: 700px;
+    width: 60%;
+    left: 0;
+    display: flex;
+    justify-content: center;
     position: relative;
-    left: 5%;
   }
 }
 @media screen and (max-width: 800px) {
