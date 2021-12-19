@@ -856,6 +856,7 @@ body {
 }
 .navbar-container .texto-flex div h4 {
   text-align: center;
+  color: yellow;
 }
 .navbar-container .texto-flex div p {
   text-align: center;
