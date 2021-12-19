@@ -3,11 +3,15 @@
 
 .footer-container {
     @include parametros(flex, right);
+    @media screen and (max-width: 1640px) {
+        display: none;
+    }
     .footer {
         @include positions(fixed);
         @include parametros(flex, space-between);
         bottom: 0px;
         @media screen and (max-width: 1640px) {
+            background-color: nth($colors , 4 );
             @include positions(fixed);
             width: 100%;
             @include parametros(flex, space-around);
@@ -22,7 +26,10 @@
             margin-right: 20px;
             @media screen and (max-width: 480px) {
                 font-size: 15px;
-            }  
+            }
+            @media screen and (max-width: 1640px) {
+                color: nth($colors , 1); 
+            } 
         }
     }
 }

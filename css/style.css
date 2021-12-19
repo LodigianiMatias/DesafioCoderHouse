@@ -440,6 +440,11 @@ body {
   display: flex;
   justify-content: right;
 }
+@media screen and (max-width: 1640px) {
+  .footer-container {
+    display: none;
+  }
+}
 .footer-container .footer {
   position: fixed;
   display: flex;
@@ -448,6 +453,7 @@ body {
 }
 @media screen and (max-width: 1640px) {
   .footer-container .footer {
+    background-color: yellow;
     position: fixed;
     width: 100%;
     display: flex;
@@ -465,6 +471,11 @@ body {
 @media screen and (max-width: 480px) {
   .footer-container .footer div {
     font-size: 15px;
+  }
+}
+@media screen and (max-width: 1640px) {
+  .footer-container .footer div {
+    color: black;
   }
 }
 
@@ -523,9 +534,11 @@ body {
   justify-content: center;
 }
 .menu-principal a {
-  width: 300px;
-  font-size: 20px;
-  color: white;
+  background-color: yellow;
+  width: 250px;
+  border-radius: 5px;
+  font-size: 30px;
+  color: black;
   font-family: "Amatic SC", cursive;
   text-decoration: underline;
   position: fixed;
@@ -533,9 +546,16 @@ body {
   display: flex;
   justify-content: center;
 }
+@media screen and (min-width: 481px) and (max-width: 1640px) {
+  .menu-principal a {
+    bottom: 10px;
+  }
+}
 @media screen and (max-width: 480px) {
   .menu-principal a {
-    bottom: 30px;
+    font-size: 25px;
+    width: 200px;
+    bottom: 10px;
   }
 }
 .menu-principal a:hover {

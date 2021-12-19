@@ -5,16 +5,23 @@
 .menu-principal {
     @include parametros(flex, center);
     a {
-        width: 300px;
-        font-size: 20px;
-        color: nth($colors , 3);
+        background-color: nth($colors , 4 );
+        width: 250px;
+        border-radius: 5px;
+        font-size: 30px;
+        color: nth($colors , 1);
         font-family: 'Amatic SC', cursive;
         text-decoration: underline;
         @include positions(fixed);
         bottom: 0;
         @include parametros(flex, center);
+        @media screen and (min-width:481px) and (max-width: 1640px) {
+            bottom: 10px;
+        }
         @media screen and (max-width: 480px) {
-            bottom: 30px;
+            font-size: 25px;
+            width: 200px;
+            bottom: 10px;
         }
         &:hover {
             border-radius: 5px;
