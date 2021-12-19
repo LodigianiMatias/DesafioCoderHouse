@@ -23,7 +23,11 @@
             color: nth($colors , 3);
             font-size: 90px;
             text-decoration: underline;
-            @media screen and (max-width:380px) {
+            text-align: center;
+            @media screen and (max-width:210px) {
+                font-size: 15px;
+            }
+            @media screen and (min-width:211px) and (max-width:380px) {
                 font-size: 25px;
             }
             @media screen and (min-width:381px) and (max-width: 480px) {
@@ -47,8 +51,11 @@
             li {
                 a {
                     color: nth($colors , 3);
-                    @media screen and (max-width:330px) {
-                        font-size: 20px;
+                    @media screen and (max-width:500px) {
+                        font-size: 30px;
+                    }
+                    @media screen and (min-width:501px) and (max-width:800px) {
+                        font-size: 30px;
                     }
                 }
                 .dropdown-item {
@@ -60,9 +67,12 @@
     .texto-flex{
         width: 70%;
         left: 15%;
-        @include parametros(flex , center);
         @include positions(relative);
         padding-bottom: 50px;
+        @media screen and (max-width:745px) {
+            width: 90%;
+            left: 5%;
+        }
         div {
             font-family: 'Amatic SC', cursive;
             color: nth($colors , 3);

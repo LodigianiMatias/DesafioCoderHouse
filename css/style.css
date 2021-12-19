@@ -157,6 +157,11 @@ body {
   display: flex;
   justify-content: center;
 }
+@media screen and (max-width: 315px) {
+  .logo-container {
+    font-size: 50px;
+  }
+}
 .logo-container .logo {
   width: 900px;
   display: flex;
@@ -221,6 +226,11 @@ body {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+}
+@media screen and (max-width: 910px) {
+  .redes-container .redes {
+    width: 90%;
+  }
 }
 .redes-container .redes a {
   margin-left: 10px;
@@ -385,7 +395,7 @@ body {
   }
 }
 .parrafo-titulo h2 {
-  text-align: right;
+  text-align: center;
   text-decoration: underline;
   font-size: 70px;
 }
@@ -405,11 +415,11 @@ body {
 }
 @media screen and (max-width: 1640px) {
   .parrafo {
-    width: auto;
+    width: 90%;
     position: relative;
     display: flex;
     justify-content: center;
-    left: 2%;
+    left: 0;
     top: 0;
   }
 }
@@ -757,8 +767,14 @@ body {
   color: white;
   font-size: 90px;
   text-decoration: underline;
+  text-align: center;
 }
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 210px) {
+  .navbar-container nav .navbar-brand {
+    font-size: 15px;
+  }
+}
+@media screen and (min-width: 211px) and (max-width: 380px) {
   .navbar-container nav .navbar-brand {
     font-size: 25px;
   }
@@ -784,9 +800,14 @@ body {
 .navbar-container nav ul li a {
   color: white;
 }
-@media screen and (max-width: 330px) {
+@media screen and (max-width: 500px) {
   .navbar-container nav ul li a {
-    font-size: 20px;
+    font-size: 30px;
+  }
+}
+@media screen and (min-width: 501px) and (max-width: 800px) {
+  .navbar-container nav ul li a {
+    font-size: 30px;
   }
 }
 .navbar-container nav ul li .dropdown-item {
@@ -795,10 +816,14 @@ body {
 .navbar-container .texto-flex {
   width: 70%;
   left: 15%;
-  display: flex;
-  justify-content: center;
   position: relative;
   padding-bottom: 50px;
+}
+@media screen and (max-width: 745px) {
+  .navbar-container .texto-flex {
+    width: 90%;
+    left: 5%;
+  }
 }
 .navbar-container .texto-flex div {
   font-family: "Amatic SC", cursive;
@@ -868,6 +893,34 @@ body {
   display: flex;
   justify-content: center;
 }
+.foto-integrante-container .foto-integrante img {
+  width: 600px;
+  height: 600px;
+}
+@media screen and (min-width: 415px) and (max-width: 615px) {
+  .foto-integrante-container .foto-integrante img {
+    width: 400px;
+    height: 400px;
+  }
+}
+@media screen and (min-width: 325px) and (max-width: 414px) {
+  .foto-integrante-container .foto-integrante img {
+    width: 300px;
+    height: 300px;
+  }
+}
+@media screen and (min-width: 215px) and (max-width: 324px) {
+  .foto-integrante-container .foto-integrante img {
+    width: 200px;
+    height: 200px;
+  }
+}
+@media screen and (max-width: 214px) {
+  .foto-integrante-container .foto-integrante img {
+    width: 100px;
+    height: 100px;
+  }
+}
 
 .informacion-container {
   font-family: "Amatic SC", cursive;
@@ -879,6 +932,16 @@ body {
   left: 60%;
   top: 280px;
 }
+@media screen and (min-width: 326px) and (max-width: 614px) {
+  .informacion-container {
+    font-size: 35px;
+  }
+}
+@media screen and (min-width: 615px) and (max-width: 800px) {
+  .informacion-container {
+    font-size: 50px;
+  }
+}
 @media screen and (max-width: 1640px) {
   .informacion-container {
     position: relative;
@@ -886,23 +949,48 @@ body {
     top: 50px;
   }
 }
+@media screen and (max-width: 325px) {
+  .informacion-container {
+    top: 0px;
+    font-size: 25px;
+  }
+}
 .informacion-container .informacion-integrante {
   width: 550px;
 }
-@media screen and (max-width: 1640px) {
+@media screen and (min-width: 801px) and (max-width: 1640px) {
   .informacion-container .informacion-integrante {
     width: 700px;
     position: relative;
     left: 5%;
   }
 }
+@media screen and (max-width: 800px) {
+  .informacion-container .informacion-integrante {
+    width: 90%;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    position: relative;
+  }
+}
 .informacion-container .informacion-integrante ul li {
   display: list-item;
+}
+@media screen and (max-width: 800px) {
+  .informacion-container .informacion-integrante ul li {
+    text-align: center;
+  }
 }
 
 .redes-integrantes-container {
   top: 50px;
   padding-bottom: 100px;
+}
+@media screen and (max-width: 325px) {
+  .redes-integrantes-container {
+    top: 10px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

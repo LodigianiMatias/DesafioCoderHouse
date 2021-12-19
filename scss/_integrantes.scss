@@ -9,6 +9,26 @@
     }
     .foto-integrante {
     @include parametros(flex,center);
+    img {
+        width: 600px;
+        height: 600px;
+        @media screen and (min-width:415px) and (max-width:615px) {
+            width: 400px;
+            height: 400px;
+        }
+        @media screen and (min-width: 325px) and (max-width:414px) {
+            width: 300px;
+            height: 300px;
+        }
+        @media screen and (min-width: 215px) and (max-width:324px) {
+            width: 200px;
+            height: 200px;
+        }
+        @media screen and (max-width:214px) {
+            width: 100px;
+            height: 100px;
+        }
+    }
     }
 }
 
@@ -20,21 +40,40 @@
     @include positions(absolute);
     left: 60%;
     top: 280px;
+    @media screen and (min-width:326px) and (max-width:614px) {
+        font-size: 35px;
+    }
+    @media screen and (min-width:615px) and (max-width:800px) {
+        font-size: 50px;
+    }
     @media screen and (max-width:1640px) {
         @include positions(relative);
         left: 0;
         top: 50px;
     }
+    @media screen and (max-width:325px) {
+        top: 0px;
+        font-size: 25px;
+    }
     .informacion-integrante {
         width: 550px;
-        @media screen and (max-width:1640px) {
+        @media screen and (min-width:801px) and (max-width:1640px) {
             width:700px;
             @include positions(relative);
             left: 5%;
         }
+        @media screen and (max-width:800px) {
+            width: 90%;
+            left: 0;
+            @include parametros(flex,center);
+            @include positions(relative);
+        }
         ul {
             li {
                 display: list-item;
+                @media screen and (max-width:800px) {
+                    text-align: center;
+                }
             }
         }
     }
@@ -43,4 +82,7 @@
 .redes-integrantes-container {
     top: 50px;
     padding-bottom: 100px;
+    @media screen and (max-width:325px) {
+        top: 10px;
+    }
 }
