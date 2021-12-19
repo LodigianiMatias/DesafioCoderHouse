@@ -1,0 +1,46 @@
+@import 'colors';
+@import 'mixins';
+
+.foto-integrante-container {
+    width: 50%;
+    @include parametros(flex,center);
+    @media screen and (max-width:1640px) {
+        width:100%;
+    }
+    .foto-integrante {
+    @include parametros(flex,center);
+    }
+}
+
+.informacion-container {
+    font-family: 'Amatic SC', cursive;
+    color: nth($colors, 3);
+    font-size: 70px;
+    @include parametros(flex, center);
+    @include positions(absolute);
+    left: 60%;
+    top: 280px;
+    @media screen and (max-width:1640px) {
+        @include positions(relative);
+        left: 0;
+        top: 50px;
+    }
+    .informacion-integrante {
+        width: 550px;
+        @media screen and (max-width:1640px) {
+            width:700px;
+            @include positions(relative);
+            left: 5%;
+        }
+        ul {
+            li {
+                display: list-item;
+            }
+        }
+    }
+}
+
+.redes-integrantes-container {
+    top: 50px;
+    padding-bottom: 100px;
+}

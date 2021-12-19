@@ -110,6 +110,20 @@ body {
     }
 }
 
+.logo-container {
+    font-family: 'Amatic SC', cursive;
+    @include positions(relative);
+    top: 0;
+    font-size: 110px;
+    color: nth($colors , 3);
+    @include parametros(flex, center);
+    .logo {
+        width: 900px;
+        @include parametros(flex, center);
+        text-decoration: underline;
+    }
+}
+
 .redes-container {
     padding-bottom: 50px;
     @include positions(relative);
