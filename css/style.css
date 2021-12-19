@@ -800,6 +800,10 @@ body {
     font-size: 60px;
   }
 }
+.navbar-container nav ul .dropdown .dropdown-menu {
+  position: relative;
+  top: 0;
+}
 .navbar-container nav ul .dropdown .dropdown-menu li {
   display: list-item;
 }

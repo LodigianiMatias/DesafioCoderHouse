@@ -43,6 +43,8 @@
         ul {
             .dropdown {
                 .dropdown-menu {
+                    @include positions (relative);
+                    top: 0;
                     li {
                         display: list-item;
                     }
