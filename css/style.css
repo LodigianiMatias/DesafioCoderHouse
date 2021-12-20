@@ -174,8 +174,11 @@ body {
   text-decoration: underline;
 }
 
-.redes-container {
+.redes-index {
   padding-bottom: 50px;
+}
+
+.redes-container {
   position: relative;
   display: flex;
   justify-content: center;
@@ -239,7 +242,7 @@ body {
   }
 }
 .redes-container .redes a {
-  margin-left: 10px;
+  margin: 0 5px;
 }
 .redes-container .redes a img {
   width: 100px;
@@ -445,23 +448,23 @@ body {
     display: none;
   }
 }
-.footer-container .footer {
+
+.footer {
   position: fixed;
   display: flex;
   justify-content: space-between;
   bottom: 0px;
 }
 @media screen and (max-width: 1640px) {
-  .footer-container .footer {
-    background-color: yellow;
-    position: fixed;
+  .footer {
+    position: relative;
     width: 100%;
     display: flex;
     justify-content: space-around;
     bottom: 5px;
   }
 }
-.footer-container .footer div {
+.footer div {
   color: white;
   font-size: 20px;
   text-align: left;
@@ -469,14 +472,19 @@ body {
   margin-right: 20px;
 }
 @media screen and (max-width: 480px) {
-  .footer-container .footer div {
+  .footer div {
     font-size: 15px;
   }
 }
 @media screen and (max-width: 1640px) {
-  .footer-container .footer div {
-    color: black;
+  .footer div {
+    color: white;
   }
+}
+
+.footer-index {
+  display: flex;
+  justify-content: right;
 }
 
 /* Seccion Tienda */

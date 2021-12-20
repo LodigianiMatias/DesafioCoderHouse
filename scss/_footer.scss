@@ -6,30 +6,34 @@
     @media screen and (max-width: 1640px) {
         display: none;
     }
-    .footer {
-        @include positions(fixed);
-        @include parametros(flex, space-between);
-        bottom: 0px;
-        @media screen and (max-width: 1640px) {
-            background-color: nth($colors , 4 );
-            @include positions(fixed);
-            width: 100%;
-            @include parametros(flex, space-around);
-            bottom: 5px;
-        }
 
-        div {
-            color: nth($colors , 3);
-            font-size: 20px;
-            text-align: left;
-            font-style: italic;
-            margin-right: 20px;
-            @media screen and (max-width: 480px) {
-                font-size: 15px;
-            }
-            @media screen and (max-width: 1640px) {
-                color: nth($colors , 1); 
-            } 
-        }
+}
+
+.footer {
+    @include positions(fixed);
+    @include parametros(flex, space-between);
+    bottom: 0px;
+    @media screen and (max-width: 1640px) {
+        @include positions(relative);
+        width: 100%;
+        @include parametros(flex, space-around);
+        bottom: 5px;
     }
+    div {
+        color: nth($colors , 3);
+        font-size: 20px;
+        text-align: left;
+        font-style: italic;
+        margin-right: 20px;
+        @media screen and (max-width: 480px) {
+            font-size: 15px;
+        }
+        @media screen and (max-width: 1640px) {
+            color: nth($colors , 3); 
+        } 
+    }
+}
+
+.footer-index {
+    @include parametros(flex, right);
 }
